@@ -1,0 +1,31 @@
+{
+  "name":        "packmule",
+  "version":     "1.0.0",
+  "description": "Universal mail tracking for node.",
+  "keywords": [
+    "usps",
+    "fedex",
+    "ups",
+    "packet",
+    "parcel",
+    "mail",
+    "tracking"
+  ],
+  "maintainers": [{
+    "name": "Patrick Facheirs",
+    "url":  "http://github.com/pfacheris"
+  }],
+  "repository": {
+    "type": "git",
+    "url":  "http://github.com/pfacheris/packmule.git"
+  },
+  "author":  "Patrick Facheris",
+  "license": "MIT",
+  "dependencies": {
+    "xml2js":     "0.2.4",
+    "moment":     "2.0.0"
+  },
+  "devDependencies": {
+  },
+  "main": "./index.js"
+}
