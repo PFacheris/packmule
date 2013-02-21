@@ -6,7 +6,7 @@ var packet = {
     "number":       "123456789012"
 };
 
-var credentials = {key: 'M5pqygaXiZPij1Uw', password: 'pb26fmr4U2ebAgxu28pqrCXkS', number: '510087720', meter: '100151321', testing: true};
+var credentials = {key: 'YOUR_KEY', password: 'YOUR_PASSWORD', number: 'YOUR_ACCOUNT_NUMBER', meter: 'YOUR_METER NUMBER', testing: true};
 
 tracking.track(credentials, packet, function (tracking) {
     console.log("FEDEX");
@@ -23,7 +23,7 @@ var packet2 = {
     "number":       "EJ958088694US"
 };
 
-var credentials2 = {id: '8521505I1183', testing: true};
+var credentials2 = {id: 'YOUR_ID', testing: true};
 
 tracking.track(credentials2, packet2, function (tracking) {
     console.log("USPS");
