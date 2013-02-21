@@ -75,7 +75,7 @@ this.track = function track (credentials, parcel, callback) {
                 return;
             }
 
-            carrier.parse(body, function (error, track) {
+            carrier.parse(credentials, body,  function (error, track) {
                 if (error) {
                     callback({
                         "status": false,
