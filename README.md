@@ -25,6 +25,9 @@ Get tracking information:
 * fedex
   * Example Credentials:
     `{key: 'YOUR_KEY', password: 'YOUR_PASSWORD', number: 'YOUR_ACCOUNT_NUMBER', meter: 'YOUR_METER_NUMBER'}`
+* ups
+  * Example Credentials:
+    `{key: 'YOUR_KEY', user: 'YOUR_USERNAME', password: 'YOUR_PASSWORD'}`
 * usps
   * Example Credentials:
     `{id: 'YOUR_USER_ID'}`

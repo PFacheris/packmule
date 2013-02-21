@@ -9,10 +9,12 @@
 */
 
 var fedex = require('./lib/fedex/fedex.js');
+var ups = require('./lib/ups/ups.js');
 var usps = require('./lib/usps/usps.js');
 
 var carriers = [
     "fedex",
+    "ups",
     "usps"
 ];
 
@@ -132,8 +134,8 @@ function getCarrier (serviceName) {
     switch (serviceName) {
         case "fedex":
             return fedex;
-        //case "ups":
-            //    return ups;
+        case "ups":
+                return ups;
         case "usps":
                 return usps;
     }

@@ -17,15 +17,33 @@ tracking.track(credentials, packet, function (tracking) {
 });
 console.log("\n");
 
+//UPS
+packet = {
+    "carrier":      "ups",
+    "number":       "1Z12345E0291980793"
+};
+
+credentials = {key: 'YOUR_KEY', user: 'YOUR_USERNAME', password: 'YOUR_PASSWORD', testing: true};
+
+tracking.track(credentials, packet, function (tracking) {
+    console.log("UPS");
+    if (tracking.status)
+        console.log(tracking.data); 
+    else
+        console.log(tracking.issues);
+});
+console.log("\n");
+
+
 //USPS
-var packet2 = {
+packet = {
     "carrier":      "usps",
     "number":       "EJ958088694US"
 };
 
-var credentials2 = {id: 'YOUR_ID', testing: true};
+credentials = {id: 'YOUR_ID', testing: true};
 
-tracking.track(credentials2, packet2, function (tracking) {
+tracking.track(credentials, packet, function (tracking) {
     console.log("USPS");
     if (tracking.status)
         console.log(tracking.data); 
